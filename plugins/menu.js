@@ -7,8 +7,11 @@ const handler = async (m, { conn, usedPrefix: _p, command, isOwner, args }) => {
 		main: 'Main Menu',
 		ai: 'AI Menu',
 		downloader: 'Downloader Menu',
+		uploader: 'Uploader Menu',
+		editor: 'Editor Menu',
 		sticker: 'Sticker Menu',
 		tools: 'Tools Menu',
+		infobot: 'Info Menu',
 		group: 'Group Menu',
 		owner: 'Owner Menu',
 	}
@@ -134,13 +137,6 @@ const handler = async (m, { conn, usedPrefix: _p, command, isOwner, args }) => {
 						buttonParamsJson: JSON.stringify({
 							display_text: '👑 Owner',
 							id: _p + 'owner',
-						}),
-					},
-					{
-						name: 'quick_reply',
-						buttonParamsJson: JSON.stringify({
-							display_text: '💻 Script',
-							id: _p + 'script',
 						}),
 					},
 				],
